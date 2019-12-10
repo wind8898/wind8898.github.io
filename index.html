@@ -1,41 +1,260 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Steven Wang Personal Website">
+        <meta name="keywords" content="Steven Wang Data Science">
+        <meta name="author" content="Steven Wang">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-  </style>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+        <!-- BootStrap CSS FrameWork  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- BootStrap jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-<body>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
 
-  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod praesentium aliquid id inventore, quos voluptatum quaerat, a quas ratione omnis rerum minima officia? Similique explicabo laboriosam praesentium ipsa, a aliquid.</h1>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique aspernatur quae dolore reiciendis vero molestias ea! Aperiam quae quaerat, quos at vitae quis necessitatibus labore veniam dolores illum cum!</p>
+        <!-- Initial CSS -->
+        <link href="css/initial.css" ref="stylesheet" type="text/css">
 
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, natus vero! Praesentium sint corporis ipsam sequi odit nobis dolores aliquid, ea quo perferendis quod. Nemo voluptatibus quibusdam perspiciatis cum cupiditate.</p>
+        <!-- Customerized CSS -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
 
-  <img class="image" src="https://images.unsplash.com/flagged/photo-1567086540438-626a15dfe64d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">
 
-  <ul>
-    <li>Cheese</li>
-    <li>Hamburger</li>
-    <li>Havana</li>
-  </ul>
 
-  <table>
-    <thead></thead>
-    <tbody>
-      <tr>
-        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At aperiam itaque ipsum porro quam non sapiente enim dolores iusto, explicabo, a, harum repellat deserunt nisi debitis? Officiis deleniti iste numquam.</td>
-        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore architecto, incidunt nesciunt, totam commodi necessitatibus reprehenderit libero et perspiciatis labore voluptas quisquam a repellat. Quae id doloribus maxime quam.</td>
-        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sed voluptatum molestias ullam eum esse aliquam facilis non, officia reprehenderit recusandae aut, nostrum, in natus magni adipisci quibusdam dolorem exercitationem.</td>
-      </tr>
-    </tbody>
-  </table>
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- Header Section 1 starts here -->
+            <div class="section-1-container">
+              <!-- section 1 navbar -->
+                <div class="nav-container">
+                        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon">   
+                                        </span>
+                                </button>
+                                <img class="navbar-brand" src="assets/logo.png">
+                              
+                                <div class="collapse navbar-collapse" id="navbar-toggler">
+                                  <ul class="navbar-nav ml-auto mt-4 mt-md-0">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" href="#!">Home</a>
+                                    </li>   
+                                    <li class="nav-item">
+                                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                      href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      Dropdown</a>
+                                      <div class="dropdown-menu" data-reference="parent">
+                                        <a class="dropdown-item" href="#!">plot 1</a>
+                                        <a class="dropdown-item" href="#!">plot 2</a>
+                                        <a class="dropdown-item" href="#!">plot 3</a>
+                                        <a class="dropdown-item" href="#!">plot 4</a>
+                                      </div>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#!">Comparison</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#!">Data</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#!">Bonus</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                        </div>
+                </div>
+                <!-- Section 1 text -->
+                <div class="text-container row d-flex flex-column">
+                  <div class="col-12 col-md-6 col-lg-4 ml-auto">
+                    <img class="img-fluid" id="section-1-image" src="/Assets/Steven.JPG">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 ml-auto section-1-text">
+                     <p>Welcome to Steven's Data analytics wesbite. The first part of the website, I am going to use the weather data to demostrate the plots under 4 circumstances. The second part of the website, I am going to use another couple diagrams to demostrate the dataset. The purpose of this website is to give simple illustration of the class teaching. If you have question, feel free to contact me anytime.</p> 
+                  </div>
+                </div>
+            </div>
 
-</body>
+        <!-- End of Header Section 1 -->
+        <!-- Section 2 starts here -->
+          <div class="section-2-container"> 
+              <div class="section-2-image d-none d-lg-block">
+                  <img class="img-fluid" src="Assets/section-1-logo.jpg">
+              </div>
+              <div class="section-2-text d-flex flex-column ml-auto col-12 col-md-6 col-lg-4 clearfix">
+                <h1>Visulaztion</h1>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eveniet veniam, eos quo deserunt sapiente laudantium saepe porro eligendi dicta adipisci, odio minus dolor. Voluptatum aliquid id nemo voluptas error. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum pariatur accusamus alias, nostrum hic unde, dolorem maiores veniam fugit quae.</p>
+              </div>
+            
+            <div class="card-container">
+                <!-- <div class="card-container-intro">
+                    <h2 class="text-center">Latest Articles</h2>
+                    <p class="text-muted text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.  </p>
+                </div> -->
+                <div class="row">
+                    <div class="col-md-3 card-text-block">
+                        <a href="#"><img class="img-fluid" src="Assets/desk.jpg"></a>
+                        <h3>Plot 1</h3>
+                        <p class="text-secondary">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. </p>
+                        <a class="h4" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                      </div>
+                    <div class="col-md-3 card-text-block">
+                        <a href="#"><img class="img-fluid" src="Assets/desk.jpg"></a>
+                        <h3>Plot 2</h3>
+                        <p class="text-secondary">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. </p>
+                        <a class="h4" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                      </div>
+                    <div class="col-md-3 card-text-block">
+                        <a href="#"><img class="img-fluid" src="Assets/desk.jpg"></a>
+                        <h3>Plot 3</h3>
+                        <p class="text-secondary">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. </p>
+                        <a class="h4" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                      </div>
+                    <div class="col-md-3 card-text-block">
+                      <a href="#"><img class="img-fluid" src="Assets/desk.jpg"></a>
+                      <h3>Plot 4</h3>
+                      <p class="text-secondary">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. </p>
+                      <a class="h4" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                    <div class="col-md-6 card-text-block">
+                      <a href="#"><img class="img-fluid" src="Assets/desk.jpg"></a>
+                      <h3>Comparison</h3>
+                      <p class="text-secondary">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. </p>
+                      <a class="h4" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                    <div class="col-md-6 card-text-block">
+                      <a href="#"><img class="img-fluid" src="Assets/desk.jpg"></a>
+                      <h3>Data</h3>
+                      <p class="text-secondary">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. </p>
+                      <a class="h4" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <!-- End of Section 2 -->
+        <!-- background section -->
+        <section class="background-section"></section>
+        <!-- end of background section -->
+        <!-- Section 3 starts here -->
+        <div class="section-3-container row">
+            <div class="tab-container row col-12 col-md-10 ml-auto mr-auto">
+                <!-- section 3 header -->
+                <div class="section-3-header">
+                  <h1>Bonus</h1>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, praesentium! Nihil nisi veniam facere perferendis molestias assumenda expedita error magnam. Voluptatem accusantium, quam pariatur nulla quos praesentium eius provident magni.</p>
+                </div>
+                <!-- Nav tabs -->
+                <div class="col-12 col-md-4 col-lg-2 align-self-center ml-auto mr-auto"> 
+                <ul class="nav nav-tabs flex-column" id="nav-pill">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu1">Menu 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu2">Menu 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu3">Menu 3</a>
+                  </li>
+                </ul>
+                </div>
+              
+                <!-- Tab panes -->
+              <div class="col-12 col-md-8 col-lg-8 align-self-start">
+                <div class="tab-content">
+                  <div id="home" class="container tab-pane active"><br>
+                    <h3>HOME</h3>
+                    <img class="img-fluid" src="/Assets/desk.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div id="menu1" class="container tab-pane fade"><br>
+                    <h3>menu1</h3>
+                    <img class="img-fluid" src="/Assets/desk.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div id="menu2" class="container tab-pane fade"><br>
+                    <h3>Menu 2</h3>
+                    <img class="img-fluid" src="/Assets/desk.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                 <div id="menu3" class="container tab-pane fade"><br>
+                  <h3>Menu 3</h3>
+                  <img class="img-fluid" src="/Assets/desk.jpg">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+             </div>
+             </div>
+        </div>
+        </div>
+        <!-- End of Section 3 -->
+        <!-- Contact Us -->
+        <!-- End of Contact Us -->
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 text-left">
+                    <img class="navbar-brand" src="assets/logo.png">
+                </div>
+                <div class="col-sm-6 col-md-4 contactme">
+                    <div>
+                        <i class="fa fa-map-marker footer-contacts-icon"></i>
+                        <span>North York, Toronto</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone footer-contacts-icon"></i>
+                        <span> +1 647-666-8888</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope footer-contacts-icon"></i>
+                        <span><a href="mailto:wind8898@hotmail.com" target="_blank">wind8898@hotmail.com</a></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>About the website</h4>
+                    <p> This website is for Data Class Demonstration only. Copyright © 2019 Steven Wang</p> 
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
 
+
+
+
+
+
+
+
+        <!-- Script from here -->
+        <script>
+            $(document).ready(function(){
+              $(".nav-tabs a").click(function(){
+                $(this).tab('show');
+              });
+            });
+        </script>
+    </body>
 </html>
